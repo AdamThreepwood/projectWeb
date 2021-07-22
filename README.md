@@ -1,7 +1,5 @@
-# responsivePortfolio
-The html, css and some JS for resonsive webpage.
+A website/webapp where I will collect my personal rpojects on my development journey.
 
+Bigger projects will get their on repositories in the future.
 
-
-
-Will include some of the js, since the bigger projects on the page will have their own repositories.
+All critique is sincerely welcome. 

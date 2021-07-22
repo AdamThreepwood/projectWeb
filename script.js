@@ -1,5 +1,3 @@
-//So far, only for responsive topnav...
-
 
 
 

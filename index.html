@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +10,12 @@
   <link rel="stylesheet" href="style.css">
 	<title>Bio</title>
     <meta charset="UTF-8">
-    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
-  	<script language="javascript" type="text/javascript" src="script.js"></script>	
-        <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
 </head>
 <body>
+  
+
+
+<nav>
   <div class="topnav"  id="myTopnav">
   <a href="diastic.html">Diastic</a>
   <a href="animations.html">Animations and flocks</a>
@@ -21,21 +23,21 @@
   <a href="index.html">Bio</a>
   <a href="javascript:void(0);" class="icon" onclick="homeBtn()">
     <i class="fa fa-bars"></i></a>
-</div>
+</div></nav>
 
 
-<div class="content">
-  <h3>John A</h3>
+<!-- <div class="content">
+  <h3>Threepwood</h3>
   <p>Developing myself as well as code.</p>
-
-
-<div id= "fanficBox">
+  </div>
+    -->
+  <div id= "fanficBox">
    <h4>Generated fanfiction of the day:</h4>
-<body onload="randomized()">
+    <body onload="randomized()"></body>
   <div id="fanfic"></div>
   <div id = "fanfic2">
   </div>
-</div>
+  </div>
 
 
   
@@ -52,15 +54,14 @@
   -->
 
   
+
   
-<div id = "developer">
+<div class = "developer">
 
  The goal is to improve my Javascript, front-end development, Python and Java.<br>
  Maybe even learn more about SQL and relational databases.<br>
   
-  </div>
-  
-  <div id = "otherSkills">
+
  The ultimate goal is to create a decent web application, and maybe even an app for android.
  <br> Since history and pedagogy are passions of mine - maybe something in those areas.
   <br> Who knows what life will bring.
@@ -68,12 +69,21 @@
   </div>
   
   
-  
+  <div class = "developer">
+  Just filling content to see what happens.
+    
+
+    </div>
 <footer>
   
   Contact information will be placed here. <br>
-  Github: JohAdams   
+  Github: AdamThreepwood   
   
 </footer>  
-  
+            <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+  	<script language="javascript" type="text/javascript" src="script.js"></script>	
+        <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
+        <script language="javascript" type="text/javascript" src="fanfic.js"></script>	
+
+</body>
 </html>

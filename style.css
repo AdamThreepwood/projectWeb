@@ -1,7 +1,6 @@
 
 
 
-
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +13,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom:20px;
   overflow: auto;
-  background-image: linear-gradient(-90deg, pink, #333);
+  background-image: linear-gradient(-90deg, #FFF5EE, #FFFAFA);
   min height: 100%;
   
   
@@ -113,7 +112,7 @@ body {
 footer {
   position: fixed;
   height: 50px;
-  background-color: #f1f1f1;
+  background-color: #333;
   padding: 10px;
   bottom: 0px;
   left: 0px;
@@ -122,6 +121,7 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: #FFFFFF;
 }
 
 .topnav .icon {
@@ -151,3 +151,4 @@ footer {
     text-align: left;
   }
 }
+

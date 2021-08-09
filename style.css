@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
 html {
@@ -15,6 +15,8 @@ body {
   overflow: auto;
   background-image: linear-gradient(-90deg, #FFF5EE, #FFFAFA);
   min height: 100%;
+  text-align: center;
+
   
   
 
@@ -33,15 +35,14 @@ body {
 
 #fanficBox{
     max width: 420px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 15px;
     background-color: pink;
     float: left;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 35px auto;
     box-shadow: 5px 15px 10px rgba(0,0,0,0.15);
     transition: 0.25s ease box-shadow, 0.25s ease transform;
+
 
 }
 
@@ -61,7 +62,7 @@ body {
 }
 
 .developer{
-    max width: 420px;
+    max width: ;
     padding: 15px;
     border-radius: 15px;
     background-color: white;
@@ -100,15 +101,6 @@ body {
   color: black;
 }
 
-/* Style the content */
-.content {
-  
-  background-color: #ddd;
-  padding: 5px;
-
-}
-
-/* Style the footer */
 footer {
   position: fixed;
   height: 50px;
@@ -152,3 +144,21 @@ footer {
   }
 }
 
+#resetFic {
+  font-size: 1.5em;
+  background: #20232a;
+  color: rgb(97, 218, 251);
+  border: none;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+  
+}
+#resetFic:hover {
+  color: #fff;
+  background: #000;
+  

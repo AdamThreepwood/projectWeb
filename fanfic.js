@@ -36,8 +36,14 @@ let beginnings = [
   "There once was",
   "Long ago",
   "In the beginning of time",
-  
-  
+  ]
+
+let adjectives = [
+  "a beautiful",
+  "a handsome and clever",
+  "a mysterious and brooding",
+  "an intelligent and charming",
+  "a quiet but romantic",
   ]
 
 
@@ -47,17 +53,23 @@ let beginnings = [
 
 
 function createFic(){
-  function randomized() {
+  function randomized1() {
     let randMember = members[Math.floor(Math.random() * members.length)];
     let randMember2 = members[Math.floor(Math.random() * members.length)];
-  return "a beautiful idol named " + randMember + " loved another cute idol named " + randMember2 + ". ";
+  return " idol named " + randMember 
 }
+  
+   function randomized2() {
+    let randMember2 = members[Math.floor(Math.random() * members.length)];
+  return " idol named " + randMember2 
+}
+
 
   function action(){
     let  randAction2 = actions[Math.floor(Math.random() * actions.length)];
     let  randAction = actions[Math.floor(Math.random() * actions.length)];
     
-  return "They often " + randAction + " before they went home. In fact, before they brushed their teeth they " + randAction2 + ".";
+  return ". They often " + randAction + " before they went home. In fact, before they brushed their teeth they " + randAction2 + ".";
   
 }
   function beginning(){
@@ -65,8 +77,21 @@ function createFic(){
     
   return randBeginning + " ";
   }
-
-  let fanficResult =  document.getElementById("fanfic").textContent = beginning("") + randomized("") + action("");
+  
+  function adjective(){
+    let  randAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+    
+  return randAdjective;
+ }
+  
+  
+  function adjective2(){
+    let  randAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+    
+  return " and " + randAdjective;
+ }
+  
+  let fanficResult =  document.getElementById("fanfic").textContent = beginning("") + adjective("") + randomized1("") + adjective2("") + randomized2("") + action("");
   fanfic.style.fontSize = "large";
 
   }
@@ -80,5 +105,4 @@ let resetButton = document.querySelector("#resetFic")
 resetButton.addEventListener("click", ()=>{
   createFic()
 })
-
 

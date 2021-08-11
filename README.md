@@ -1,1 +1,1 @@
-Personal website where suiting projects will be displayed. 
+Personal website where suitable projects will be displayed. 

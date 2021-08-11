@@ -7,60 +7,109 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="daynight.css">
 	<title>Bio</title>
     <meta charset="UTF-8">
-    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
-  	<script language="javascript" type="text/javascript" src="script.js"></script>	
-        <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
 </head>
 <body>
+  
+
+
+<nav>
   <div class="topnav"  id="myTopnav">
   <a href="diastic.html">Diastic</a>
   <a href="animations.html">Animations and flocks</a>
-  <a href="simple.html">Simple shop</a>
-  <a href="index.html">Bio</a>
+  <a href="index.html">Generators and API</a>
   <a href="javascript:void(0);" class="icon" onclick="homeBtn()">
     <i class="fa fa-bars"></i></a>
-</div>
+</div></nav>
 
+  
 
-<div class="content">
-  <h3>John A</h3>
+ 
+<!-- <div class="content">
+  <h3>Threepwood</h3>
   <p>Developing myself as well as code.</p>
+  </div>
+    -->
+  
+   <div class = "box" id= "fanficBox">
+   <h2> The diameters of asteroids near earth today </h2>
+    <button class = "button" id="fetch"> Fetch</button>
+            <div id="asteroidsContent">
+    </div>
+     <p>
+        Fetching data about asteroids close to earth from NASA.
+      Fetching JSON data, nested in several layers, with a variable that <br>
+      automatically requests data between the current date and a week ago. 
+     </p>
+  
+
+         <small>
+    Data-set: All the data is from the NASA JPL Asteroid team (http://neo.jpl.nasa.gov/).
+    </small>
+  </div>
+
+  
+  
+  
+  <div class = "box" id= "fanficBox">
+   <h2>Generated fiction:</h2>
+    <body onload="randomized()"></body>
+  <div id="fanfic"></div>
+  <div id = "fanfic2">
+  </div>
+      <button class = "button" id="resetFic" onclick = "click1()"> Make a new fiction</button>
+  </div>
 
 
+  
+<!--
 <div id= "quoteBox">
-   <h4>Programming poem of the day:</h4>
+   <h4>API created poem of the day:</h4>
 <body onload="getQuote()">
   <div id="quote"></div>
   <p id = "dataCredit"> Raw data from happycoding.io
     
   </p>
   </div>
+-->
+
+
 
   
-  
-<div id = "developer">
+<div class = "developer">
 
  The goal is to improve my Javascript, front-end development, Python and Java.<br>
  Maybe even learn more about SQL and relational databases.<br>
   
-  </div>
-  
-  <div id = "otherSkills">
- The ultimate goal is to create a decent web application, and maybe even an app for android.
- <br> Since history and pedagogy are passions of mine - maybe something in those areas.
+
+ Please check out the topnav for projects in javascript and API fetching.
+ <br> A long term goal is to create a web app, maybe about history.
   <br> Who knows what life will bring.
   
   </div>
   
   
-  
+  <div class = "developer">
+  Please see a couple of projects under the tabs "Animations and flocks" as well as "Diastic". More projects to be added soon, including API calls.
+    
+
+    </div>
 <footer>
   
   Contact information will be placed here. <br>
-  Github: JohAdams   
+  Github: <a href="https://github.com/AdamThreepwood">Adam Threepwood</a> 
   
 </footer>  
-  
+            <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+  	<script language="javascript" type="text/javascript" src="script.js"></script>	
+        <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
+        <script language="javascript" type="text/javascript" src="fanfic.js"></script>	
+        <script language="javascript" type="text/javascript" src="chart.js"></script>	
+        <script language="javascript" type="text/javascript" src="fetchAsteroids.js"></script>	
+
+
+</body>
 </html>

@@ -1,7 +1,7 @@
 let actions = [
-  "laughed",
-  "cried",
-  "played",
+  "laughed all day",
+  "cried of joy",
+  "played chess",
   "ate",
   "swam",
   "baked cookies",
@@ -19,7 +19,7 @@ let members = [
   "Jimin",
   "RM",
   "Jungkook",
-  "V",
+  "Galadriel",
   "Suga",
   "Jin",
   "Sherlock",
@@ -29,17 +29,20 @@ let members = [
   "Hardy",
   "Sean",
   "Castiel",
+  
 ]
 
 let beginnings = [
   "Once upon a time",
-  "There once was",
+  "Ages ago",
   "Long ago",
   "In the beginning of time",
+  "Not so long ago",
+  "Quite recently"
   ]
 
 let adjectives = [
-  "a beautiful",
+  "a wise but foolish",
   "a handsome and clever",
   "a mysterious and brooding",
   "an intelligent and charming",
@@ -68,8 +71,9 @@ function createFic(){
   function action(){
     let  randAction2 = actions[Math.floor(Math.random() * actions.length)];
     let  randAction = actions[Math.floor(Math.random() * actions.length)];
+    let  randAction3 = actions[Math.floor(Math.random() * actions.length)];
     
-  return ". They often " + randAction + " before they went home. In fact, before they brushed their teeth they " + randAction2 + ".";
+  return " met and became friends. They often " + randAction + " before they went home. In fact, before they "+ randAction3 + " they " + randAction2 + ".";
   
 }
   function beginning(){
@@ -105,4 +109,3 @@ let resetButton = document.querySelector("#resetFic")
 resetButton.addEventListener("click", ()=>{
   createFic()
 })
-

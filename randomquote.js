@@ -25,7 +25,7 @@
           console.log("Ignored readyState: " + ajaxRequest.readyState);
         }
       }
-      ajaxRequest.open('GET', "https://happycoding.io/api/site.json");
+      ajaxRequest.open('");
       ajaxRequest.send();
     }
 	

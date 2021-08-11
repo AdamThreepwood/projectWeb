@@ -1,10 +1,12 @@
 
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="daynight.css">
 	<title>Bio</title>
     <meta charset="UTF-8">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
@@ -17,7 +19,7 @@
   <div class="topnav"  id="myTopnav">
   <a href="diastic.html">Diastic</a>
   <a href="animations.html">Animations and flocks</a>
-  <a href="index.html">Bio</a>
+  <a href="index.html">Generators and API</a>
   <a href="javascript:void(0);" class="icon" onclick="homeBtn()">
     <i class="fa fa-bars"></i></a>
 </div></nav>
@@ -30,13 +32,34 @@
   <p>Developing myself as well as code.</p>
   </div>
     -->
+  
+   <div class = "box" id= "fanficBox">
+   <h2> The diameters of asteroids near earth today </h2>
+     <h2 id = "dateShow"></h2>
+    <button class = "button" id="fetch"> Fetch</button>
+            <div id="asteroidsContent">
+    </div>
+     <p>
+        Fetching data about asteroids close to earth from NASA.
+      Fetching JSON data, nested in several layers, with a variable that <br>
+      automatically requests data between the current date and a week ago. 
+     </p>
+  
+
+         <small>
+    Data-set: All the data is from the NASA JPL Asteroid team (http://neo.jpl.nasa.gov/).
+    </small>
+  </div>
+
+  
+  
+  
   <div class = "box" id= "fanficBox">
-   <h2>Generated fanfiction of the day:</h2>
-    <body onload="randomized()"></body>
+   <h2>Generated fiction:</h2>
   <div id="fanfic"></div>
   <div id = "fanfic2">
   </div>
-      <button id="resetFic" onclick = "click1()"> Make a new fiction</button>
+      <button class = "button" id="resetFic" onclick = "click1()"> Make a new fiction</button>
   </div>
 
 
@@ -57,35 +80,37 @@
   
 <div class = "developer">
 
- The goal is to improve my Javascript, front-end development, Python and Java.<br>
- Maybe even learn more about SQL and relational databases.<br>
+ Currently working on improving my skills in Java and React. <br>
+ Other skills under development are Kotlin, REST API and .Net.<br>
+ Current skill set mainly in front-end, JSON APIs and Python. 
   
 
  Please check out the topnav for projects in javascript and API fetching.
- <br> A long term goal is to create a web app, maybe about history.
+ <br> A long term goal is to create a web app focusing on history.
   <br> Who knows what life will bring.
   
   </div>
   
   
   <div class = "developer">
-  Please see a couple of projects under the tabs "Animations and flocks" as well as "Diastic". More projects to be added soon, including API calls.
-    
+  Please see a couple of projects under the tabs "Animations and flocks" as well as "Diastic". More projects to be added soon, including more advanced API calls.
+  You are very wlcome to visit my <a id ="divLink" href="https://github.com/AdamThreepwood">Github Adam Threepwood</a>.
 
     </div>
 <footer>
   
   Contact information will be placed here. <br>
-  Github: <a href="url">Adam Threepwood</a> 
+  Github: <a href="https://github.com/AdamThreepwood">Adam Threepwood</a> 
   
 </footer>  
             <script src="https://cdn.jsdelivr.net/npm/p5"></script>
   	<script language="javascript" type="text/javascript" src="script.js"></script>	
         <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
         <script language="javascript" type="text/javascript" src="fanfic.js"></script>	
-        <script language="javascript" type="text/javascript" src="chart.js"></script>	
+        <script language="javascript" type="text/javascript" src="fetchAsteroids.js"></script>	
 
 
 </body>
 </html>
+
 

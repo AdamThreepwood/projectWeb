@@ -3,6 +3,8 @@
 // https://thecodingtrain.com/CodingChallenges/162-self-avoiding-walk.html
 // Modifications done by me to original code.
 
+
+
 let allAlternatives = [
   { dx: 1, dy: 0 },
   { dx: -1, dy: 0 },
@@ -11,15 +13,15 @@ let allAlternatives = [
 ];
 
 function reset(){
-  
-    var canvas = createCanvas(400, 400);
+  count = 0;
+  var canvas = createCanvas(400, 400);
   canvas.parent("selfWalker");
   cols = floor(width / spacing);
   rows = floor(height / spacing);
   x = cols / 2;
   y = rows / 2;
   background(51);
-
+  
    var resetButton = createButton("reset");
   resetButton.position(0,0);
   resetButton.parent("selfWalker");
@@ -91,6 +93,7 @@ function draw() {
 
   if (alternatives.length > 0) {
     let step = random(alternatives);
+    
 
     strokeWeight(2);
     stroke(23, 255, 0);
@@ -101,7 +104,14 @@ function draw() {
     vertex(x * spacing, y * spacing);
     endShape();
     grid[x][y] = true;
+    count++;
+    counter.innerHTML = count;
   } else {
     console.log("Cannot move!");
   }
 }
+
+let decreaseBtn = document.getElementById("button__decrease");
+let increaseBtn = document.getElementById("button__increase");
+let counter = document.getElementById("counter");
+let count = 0;

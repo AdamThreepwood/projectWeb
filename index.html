@@ -1,9 +1,9 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
+  
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -33,19 +33,26 @@
   </div>
     -->
   
+  
    <div class = "box" id= "fanficBox">
    <h2> The diameters of asteroids near earth today </h2>
      <h2 id = "dateShow"></h2>
-    <button class = "button" id="fetch"> Fetch</button>
+    <button class = "button" id="fetch"> Fetch today</button>
+    <button class = "button" id="fetchYesterday"> Fetch yesterday</button>
             <div id="loading">  </div> 
             <div id="asteroidsContent">
-              <canvas id=myChart></canvas>
+              <div id = chartWindows>
+
+              </div>
     </div>
      <p>
         Fetching data about asteroids close to earth from NASA.
-      Fetching JSON data, nested in several layers, with a variable that <br>
+      Fetching JSON data, nested in several layers, with a variable that 
       automatically requests data between the current date and a week ago. 
      </p>
+  
+
+  
   
 
          <small>
@@ -56,14 +63,7 @@
   
   
   
-  <div class = "box" id= "fanficBox">
-   <h2>Generated fiction:</h2>
-  <div id="fanfic"></div>
-  <div id = "fanfic2">
-  </div>
-      <button class = "button" id="resetFic" onclick = "click1()"> Make a new fiction</button>
-  </div>
-
+ 
 
   
 <!--
@@ -82,21 +82,17 @@
   
 <div class = "developer">
 
- Currently working on improving my skills in Java and React. <br>
- Other skills under development are Kotlin, REST API and .Net.<br>
- Current skill set mainly in front-end, JSON APIs and Python. 
-  
-
- Please check out the topnav for projects in javascript and API fetching.
- <br> A long term goal is to create a web app focusing on history.
-  <br> Who knows what life will bring.
+ Currently working on improving my skills in C# and React. <br>
+ Current skill set mainly in vanilla JS, Vue and REST APIs. <br>
+ Long term project is to create an app for publication on android/Ios  <br>
+ as well as web. 
   
   </div>
   
   
   <div class = "developer">
   Please see a couple of projects under the tabs "Animations and flocks" as well as "Diastic". More projects to be added soon, including more advanced API calls.
-  You are very wlcome to visit my <a id ="divLink" href="https://github.com/AdamThreepwood">Github Adam Threepwood</a>.
+  You are very welcome to visit my <a id ="divLink" href="https://github.com/AdamThreepwood">Github Adam Threepwood</a>.
 
     </div>
 <footer>
@@ -110,9 +106,9 @@
         <script language="javascript" type="text/javascript" src="randomquote.js"></script>	
         <script language="javascript" type="text/javascript" src="fanfic.js"></script>	
         <script language="javascript" type="text/javascript" src="fetchAsteroids.js"></script>	
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 
 </body>
 </html>
-
-
